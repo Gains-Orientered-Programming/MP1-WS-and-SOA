@@ -14,7 +14,7 @@ const setGender = async (data) => {
 					}),
 					headers: {
 						'Content-Type': 'application/json',
-						Authorization: 'Bearer KgP4xqABWz45WwajLzELg3qjE7nqJegGESbl',
+						Authorization: 'Bearer 6y97jXUTGMtHKAz93Bc4uEqUqv68YvRVMboB',
 					},
 				}
 			);
@@ -69,14 +69,13 @@ const generateCelciusFahrenheitMessage = async (celsius) => {
 const processMessageToPartners = async (partners) => {
 	partners.map(async (partner) => {
 		try {
-			return generateCelciusFahrenheitMessage(18).then((forecastMessage) => {
+			return generateCelciusFahrenheitMessage(22).then((forecastMessage) => {
 				console.log(
 					`Dear ${
 						partner.Gender ? (partner.Gender === 'male' ? 'Mr' : 'Mrs') : ''
 					} ${
 						partner.Name
-					} - Looking forward to seeing you at the UN Meeting being held in Denmark for the 13th of October 2023!
-					${forecastMessage}`
+					} - Looking forward to seeing you at the UN Meeting being held in Denmark for the 13th of October 2023! \n ${forecastMessage} \n`
 				);
 			});
 		} catch (error) {
