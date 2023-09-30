@@ -42,5 +42,3 @@ This JavaScript code is designed to generate personalized messages for a list of
 
 ### Asynchronous Operations
 - The code uses `async/await` to handle asynchronous operations like making API requests and processing promises.
-
-Remember to include any necessary setup instructions, such as installing dependencies (`node-fetch`) and providing API keys or tokens for the external services used in your code.
