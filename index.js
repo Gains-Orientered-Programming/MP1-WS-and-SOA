@@ -7,7 +7,10 @@ const setGender = async (data) => {
 			'https://gender-api.com/v2/gender/by-first-name',
 			{
 				method: 'post',
-				body: JSON.stringify({ first_name: item.Name, ip: item.ip }),
+				body: JSON.stringify({
+					first_name: item.Name.split(' ')[0],
+					ip: item.ip,
+				}),
 				headers: {
 					'Content-Type': 'application/json',
 					Authorization: 'Bearer KgP4xqABWz45WwajLzELg3qjE7nqJegGESbl',
@@ -18,8 +21,10 @@ const setGender = async (data) => {
 		return { ...item, Gender: jsonData.gender };
 	});
 	const results = await Promise.all(promises);
-	console.log(results);
 	return results;
 };
 
-setGender(data);
+const genderedData = setGender(data);
+genderedData.then((res) => {
+	console.log(res);
+});
