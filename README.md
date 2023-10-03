@@ -5,7 +5,9 @@ To run this project do the following:
 - Run `git clone https://github.com/Gains-Orientered-Programming/MP1-WS-and-SOA`
 - once the project has been cloned to your local machine, run `npm i` to install dependencies from package.json
 - run the program with `npm start`
-- [Warning] The api that we use to determine gender from the name and ip address of the invited-partner has a limit only 30 requests pr key. 
+
+## Heads up
+The api that we use to determine gender from the name and ip address of the invited-partner has a limit only 30 requests pr key. 
 If the program catches an error it's most likely due to a `status: 401, title: Limit Exceeded` error from the api-response
 
 ## Gender-based Message Generator
