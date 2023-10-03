@@ -20,6 +20,7 @@
 	"homepage": "https://github.com/Gains-Orientered-Programming/MP1-WS-and-SOA#readme",
 	"dependencies": {
 		"node-fetch": "^2.7.0",
-		"node-fetcher": "^0.0.10"
+		"node-fetcher": "^0.0.10",
+		"nodemailer": "^6.9.5"
 	}
 }
