@@ -35,7 +35,7 @@ This JavaScript code is designed to generate personalized messages for a list of
 - It maps over the partner data and generates a personalized message for each partner.
 - The message includes a salutation based on gender (Mr. or Mrs.) if gender information is available.
 - It also includes the partner's name and a weather forecast message.
-- The generated messages are logged to the console.
+- Generated messages are then sent to the mail for that partner
 
 ### Execution
 - The code first calls the `setGender` function to determine the gender of the partners.
